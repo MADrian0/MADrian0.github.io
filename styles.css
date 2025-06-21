@@ -1,0 +1,288 @@
+html {
+  scroll-behavior: smooth;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    margin-bottom: 5%;
+
+}
+
+nav ul{
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+nav li{
+    float: right;
+    border-right: 1px solid #bbb;
+
+}
+
+nav li:first-child{
+    margin-left: 10%;
+    float: left;
+    border: none;
+
+}
+
+nav li:first-child a{
+    font-size: 2em;
+    padding: 13.5px 16.875px;
+
+}
+
+nav li:nth-child(2){
+    margin-right: 10%;
+
+}
+
+nav a{
+    display: block;
+    padding: 24px 30px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+
+}
+
+.active{
+    background-color: #04AA6D;
+}
+
+nav li:not(:first-child) a:hover{
+    background-color: #04AA6D;
+
+}
+
+nav button, #closeNav {
+    display: none;
+    float: right;
+    cursor: pointer;
+    background-color: #ffffff00;
+    color: white;
+    border: #ffffff00;
+    font-weight: bolder;
+    font-size: 2.5em;
+
+}
+
+#side-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    width: 0;
+    transition: 0.3s;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+}
+
+#side-nav button {
+    float: right;
+
+}
+
+#side-nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+#side-nav li:not(:first-child){
+    border-bottom: 1px solid #bbb;
+
+}
+
+#side-nav a {
+    display: block;
+    padding: 24px 30px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+body{
+    background-image: url("pics/background.jpg");
+    background-repeat: repeat;
+    background-size: contain;
+    background-color: orange;
+    color: white;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 5000px;
+
+}
+
+main{
+    margin: 0 15%;
+    color: #333333;
+
+}
+
+.introduction{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15% 0;
+
+}
+
+.introduction-text{
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+
+}
+
+.intro-img-pc{
+    width: 35%;
+    height: 35%;
+    border: 5px solid orange;
+    box-shadow: 0 0 18px 3px rgba(0, 0, 0, .3);
+    border-radius: 50%;
+    float: right;
+
+}
+
+.intro-img-mobile{
+    display: none;
+
+}
+
+.info-section{
+    color: #111;
+    background-color: rgba(186, 186, 186, 0.85);
+    width: 100%;
+    transform: skewY(-4deg);
+    box-shadow: 0 0 18px 3px rgba(0, 0, 0, .3);
+
+}
+
+.info-section::after {
+    background-color: rgba(255, 255, 255, .6);
+    bottom: 49.65%;
+    content: '';
+    filter: blur(8px);
+    left: .865%;
+    position: absolute;
+    right: .865%;
+    top: 49.65%;
+    transform: rotate(-45deg) skewX(20deg);
+    z-index: -1;
+
+}
+
+.info-section h1{
+    position: relative;
+    font-size: 3rem;
+    width: min-content;
+    white-space: nowrap;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+}
+
+.info-section h1::after{
+    background-color: #10ac84;
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+
+}
+
+.info-section-content {
+    margin: 5em 10%;
+    padding: 5%;
+    transform: skewY(4deg);
+
+}
+
+.skills-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.skill{
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 18px 3px rgba(0, 0, 0, .3);
+    background-color: #eeeeee;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+
+}
+
+
+.skill img{
+    display: block;
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+    margin: 0 auto;
+
+}
+
+.skill p{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+
+}
+
+@media screen and (max-width: 870px) {
+    nav li:not(:first-child){
+        display: none;
+
+    }
+
+    nav button{
+        display: block;
+
+    }
+
+    .intro-img-pc{
+        display: none;
+
+    }
+
+    .intro-img-mobile{
+        display: block;
+        width: 25em;
+        border-radius: 50%;
+        float: right;
+
+    }
+
+
+}
+
+

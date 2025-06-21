@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Adrián Müller Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body id="home">
+    <nav>
+        <ul>
+            <li>
+                <a onclick="navElemsDeactivate(this)" href="#home" id="home-button">Adrián Müller</a>
+            </li>
+            <li>
+                <a onclick="navElemActivate(this)" href="#projects">Projects</a>
+            </li>
+            <li>
+                <a onclick="navElemActivate(this)" href="#skills">Skills</a>
+            </li>
+            <li>
+                <a onclick="navElemActivate(this)" href="#about">About</a>
+            </li>
+            <button id="openNav" onclick="openNav()">&#9776;</button>
+        </ul>
+    </nav>
+
+    <div id="side-nav">
+        <ul>
+            <li>
+                <button id="closeNav" onclick="closeNav()">&times;</button>
+            </li>
+            
+            <li>
+                <a onclick="closeNav()" href="#about">About</a>
+            </li>
+            <li>
+                <a onclick="closeNav()" href="#skills">Skills</a>
+            </li>
+            <li>
+                <a onclick="closeNav()" href="#projects">Projects</a>
+            </li>
+        </ul>
+    </div>
+
+    <main>
+        <div class="introduction">
+            <img src="pics/prof-pic.jpg" alt="profile picture" class="intro-img-mobile">
+            <div class="introduction-text">
+                <h1>Hi!<br>I'm Adrián Müller</h1>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pretium volutpat finibus.</h2>
+            </div>
+            <img src="pics/prof-pic.jpg" alt="profile picture" class="intro-img-pc">
+        </div>
+    </main>
+
+    <div class="info-section" id="about">
+        <div class="info-section-content">
+            <h1>About Me</h1>
+            <p>
+                Passionate and detail-oriented software developer with experience in designing, developing, and maintaining web and software applications. Skilled in full-stack development, clean code practices, and agile methodologies. Proven ability to solve complex problems, collaborate effectively in cross-functional teams, and continuously learn new technologies. Committed to delivering high-quality, scalable, and user-focused solutions.
+            </p>
+        </div>
+    </div>
+    <div class="info-section" id="skills">
+        <div class="info-section-content">
+            <h1>My Skills</h1>
+            <div class="skills">
+                <div class="skills-list">
+                    <div class="skill">
+                        <img src="pics/skills/c.png" alt="C">
+                        <p>C</p>
+                    </div>
+                    <div class="skill">
+                        <img src="pics/skills/csharp.png" alt="C">
+                        <p>C#</p>
+                    </div>
+                    <div class="skill">
+                        <img src="pics/skills/java.png" alt="C">
+                        <p>Java</p>
+                    </div>
+                    <div class="skill">
+                        <img src="pics/skills/js.png" alt="C">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="skill">
+                        <img src="pics/skills/html.png" alt="C">
+                        <p>HTML</p>
+                    </div>
+                    <div class="skill">
+                        <img src="pics/skills/css.png" alt="C">
+                        <p>CSS</p>
+                    </div>
+                    <div class="skill">
+                        <img src="pics/skills/php.png" alt="C">
+                        <p>PHP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="info-section" id="projects">
+        <div class="info-section-content">
+            <h1>My Projects</h1>
+
+        </div>
+    </div>
+</body>
+</html>
