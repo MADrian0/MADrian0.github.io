@@ -184,7 +184,7 @@ body{
 
 }
 
-.info-section::before {
+.info-section::before, .contact-form::before {
     margin-top: 100px;
     height: 5px;
     background-color: #ffffff00;
