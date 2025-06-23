@@ -130,7 +130,6 @@ body{
     color: white;
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    height: 10000px;
 
 }
 
@@ -150,6 +149,22 @@ body{
     flex-direction: column;
     max-width: 60%;
     order: 1;
+
+}
+
+.introduction-text h1{
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+
+}
+
+.introduction-text h2{
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
 
 }
 
@@ -185,12 +200,10 @@ body{
 
 }
 
-.info-section::before, #contact::before {
-    margin-top: 100px;
-    height: 5px;
-    background-color: #ffffff00;
-    display: block;
+#contact::before {
     content: '';
+    height: 50px;
+    margin: 25px;
 
 }
 
@@ -363,11 +376,33 @@ body{
 
     }
 
+    .introduction-text h1{
+    font-size: 1.5em;
+
+    }
+
+    .introduction-text h2{
+    font-size: 1em;
+    margin-bottom: 50px;
+
+    }
+
     .intro-img{
         width: 50%;
         height: 50%;
         margin: auto;
         order: 1;
+
+    }
+
+    .info-section::before{
+        content: '';
+        margin: 25px;
+
+    }
+
+    #contact::before {
+        margin: 15px;
 
     }
 
